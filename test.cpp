@@ -1,8 +1,3 @@
-// Copyright 2022
-// By Dr. Rykalova
-// Editted by Dr. Daly
-// test.cpp for PS1a
-// updated 5/12/2022
 
 #include <iostream>
 #include <string>
