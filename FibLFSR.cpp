@@ -61,13 +61,3 @@ std::ostream& operator<<(std::ostream& outStream, const FibLFSR& lfsr){
     outStream << lfsr.initSeed;
     return outStream;
 }
-
-char XOR (char bitOne, char bitTwo){
-    if (bitOne == bitTwo){
-        return '0';
-    }
-    else {
-        return '1';
-    }
-}
-
