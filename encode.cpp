@@ -2,12 +2,12 @@
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
-#include "FibLFSR.hpp"
+#include "ShiftRegister.hpp"
 #include <iostream>
 #include <bitset>
 #include <string>
 
-void transform(sf::Image& img, FibLFSR* seed){
+void transform(sf::Image& img, ShiftRegister* seed){
     sf::Vector2u size = img.getSize();
 
     for (unsigned int i = 0; i < size.x; i++){
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
     std::string inputFile = argv[1];
     image.loadFromFile(inputFile);
     std::string seed = argv[3];
-    FibLFSR mainSeed(seed);
+    ShiftRegister mainSeed(seed);
 
     
     sf::RenderWindow window1(sf::VideoMode(image.getSize().x, image.getSize().y), "Input File");
