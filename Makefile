@@ -3,7 +3,7 @@ FLAGS = -Wall -Werror -pedantic -std=c++17 -g
 PROGRAM = Encode
 DEPS = ShiftRegister.hpp
 OBJS = ShiftRegister.o
-LIB = -lsfml-system
+LIB = -lsfml-system -lsfl-window -lsfml-graphics
 
 all: $(PROGRAM) test
 
