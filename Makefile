@@ -1,9 +1,9 @@
 CC = g++
 FLAGS = -Wall -Werror -pedantic -std=c++17 -g
 PROGRAM = Encode
-DEPS = FibLFSR.hpp
-OBJS = FibLFSR.o
-LIB = -lsfml-graphics -lsfml-window -lsfml-system -lboost_unit_test_framework
+DEPS = ShiftRegister.hpp
+OBJS = ShiftRegister.o
+LIB = -lsfml-system
 
 all: $(PROGRAM) test
 
