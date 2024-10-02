@@ -2,10 +2,10 @@
 #include <string>
 #include <vector>
 
-#include "FibLFSR.hpp"
+#include "ShiftRegister.hpp"
 
 
-FibLFSR::FibLFSR(std::string seed){
+ShiftRegister::ShiftRegister(std::string seed){
     initSeed = seed;
     
     if (initSeed.length() < 16){
@@ -22,11 +22,11 @@ FibLFSR::FibLFSR(std::string seed){
         
 }
 
-std::string FibLFSR::getSeed(){
+std::string ShiftRegister::getSeed(){
     return initSeed;
 }
 
-int FibLFSR::step(){
+int ShiftRegister::step(){
     int firstResult;
     int secondResult;
     int finalResult;
@@ -46,7 +46,7 @@ int FibLFSR::step(){
     return finalResult;
 }
 
-int FibLFSR::generate(int k){
+int ShiftRegister::generate(int k){
     int var = 0;
     int result = 0;
     for (int i = 0; i < k; i++){
