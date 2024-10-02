@@ -2,10 +2,10 @@
 #include <iostream>
 
 
-class FibLFSR {
+class ShiftRegister {
 public:
 // Constructor to create LFSR with the given initial seed
-    FibLFSR(std::string seed);
+    ShiftRegister(std::string seed);
 //get seed
     std::string getSeed();
 // Simulate one step and return the new bit as 0 or 1
@@ -17,4 +17,4 @@ public:
 private:
     std::string initSeed;
 };
-char XOR(char bitOne, char bitTwo);
+
